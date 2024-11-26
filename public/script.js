@@ -27,7 +27,9 @@ canvas.addEventListener('mouseup', () => {
 });
 
 canvas.addEventListener('mousemove', (e) => {
-    if (!drawing) return;
+    if (!drawing) {
+        return;
+    }
 
     const rect = canvas.getBoundingClientRect();
     const x = e.clientX - rect.left;
